@@ -10,7 +10,7 @@
 
   int main(int argv, char** argc){
     if(argv < 3){
-      cout << "Please provide 2 file names" << endl;
+     std::cout<< "Please provide 2 file names" <<std::endl;
       return 1;
     }
     
@@ -19,7 +19,7 @@
     string line;
 
     if (cardFile1.fail() || cardFile2.fail() ){
-      cout << "Could not open file " << argc[2];
+     std::cout<< "Could not open file " << argc[2];
       return 1;
     }
 
@@ -51,7 +51,7 @@
           int itValue = itA->suitedVal;
           auto location = b.contains(itValue);
           if(location){
-            cout << "Alice picked matching card " << itA->suit << " " << itA->value << endl;
+           std::cout<< "Alice picked matching card " << itA->suit << " " << itA->value <<std::endl;
             a.remove(itValue);
             b.remove(itValue);
             break;
@@ -66,7 +66,7 @@
           int itValue = itB->suitedVal;
           auto location = a.contains(itValue);
           if(location){
-            cout << "Bob picked matching card " << itB->suit << " " << itB->value << endl;
+           std::cout<< "Bob picked matching card " << itB->suit << " " << itB->value <<std::endl;
             a.remove(itValue);
             b.remove(itValue);
             break;
@@ -77,9 +77,9 @@
         aTurn = true;
       }
     }
-    std::cout << endl << "Alice's cards:" << endl;
+    std::cout <<std::endl << "Alice's cards:" <<std::endl;
     a.print();
-    std::cout << endl << "Bob's cards:" << endl;
+    std::cout <<std::endl << "Bob's cards:" <<std::endl;
     b.print();
 
 
