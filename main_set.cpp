@@ -76,11 +76,11 @@ int main(int argv, char** argc){
       if (itB == b.rend()) break;
     }
   }
-  cout << "Alice's cards:" << endl;
+  cout << endl << "Alice's cards:" << endl;
   for (Card ca : a){
     cout << ca << endl;
   }
-  cout << "Bob's cards:" << endl;
+  cout << endl <<  "Bob's cards:" << endl;
   for (Card cb : b){
     cout << cb << endl;
   }

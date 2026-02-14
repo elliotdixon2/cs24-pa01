@@ -77,9 +77,9 @@
         aTurn = true;
       }
     }
-    std::cout << "Alice's cards:" << endl;
+    std::cout << endl << "Alice's cards:" << endl;
     a.print();
-    std::cout << "Bob's cards:" << endl;
+    std::cout << endl << "Bob's cards:" << endl;
     b.print();
 
 
