@@ -41,10 +41,11 @@ int main(int argv, char** argc){
   cardFile2.close();
 
   
-  auto itA = a.begin();
-  auto itB = b.rbegin();
+  
   bool aTurn = true;
   while (!a.empty() && !b.empty()){
+    auto itA = a.begin();
+    auto itB = b.rbegin();
     if(aTurn){
       while(itA != a.end()){
         auto locate = b.find(*itA);
